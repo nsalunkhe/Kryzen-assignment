@@ -40,7 +40,7 @@ const UserInfoForm = ({ userId, token }) => {
 
     // Add content to PDF
     if (user.photo) {
-      const imgData = user.photo; // Assuming user.photo contains the image data or URL
+      const imgData = user.photo; 
       newPdf.addImage(imgData, 'JPEG', 15, 50, 80, 80);
     }
     newPdf.text(`User Information - ${user.name}`, 20, 10);

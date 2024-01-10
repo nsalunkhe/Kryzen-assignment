@@ -1,9 +1,9 @@
-// src/App.js
 import React, { useState } from 'react';
 import {Route, Routes } from 'react-router-dom';
 import Signup from './components/Auth/Signup';
 import Login from './components/Auth/Login';
 import UserInfoForm from './User/UserInfoForm';
+import UserProfile from './User/UserProfile';
 import "./App.css"
 
 const App = () => {
@@ -22,6 +22,8 @@ const App = () => {
             path="/user/update"
             element={<UserInfoForm userId={userId} token={token} />}
           />
+           <Route path="/user/profile" element={<UserProfile userId={userId} token={token} />}>
+        </Route>
         </Routes>
       </div>
   );

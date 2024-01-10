@@ -1,4 +1,3 @@
-/* UserInfoForm.css */
 
 .user-info-container {
     display: flex;
@@ -10,15 +9,11 @@
     background-size: cover;
   }
   
-  /* .user-info-heading {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  } */
   
   .form-container {
     display: flex;
     width: 100%;
-    max-width: 800px; /* Adjust the max-width as needed */
+    max-width: 800px; 
     flex-direction: column;
   }
   
@@ -65,7 +60,7 @@
   .updated-user-info {
     flex: 1;
     border-radius: 4px;
-    width: 100%; /* Adjust the max-width as needed */
+    width: 100%; 
   }
   
   .updated-user-info h3 {
@@ -96,7 +91,6 @@
   .close{
    background-color: #b40d31;
    color:white;
-   height:50%;
    border:none;
    margin-top:auto;
    margin-bottom: auto;
