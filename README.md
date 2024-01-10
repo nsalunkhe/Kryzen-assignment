@@ -21,6 +21,7 @@ Implement user authentication to ensure secure access to the application. Users 
 3. Data Display and Preview:
 After submitting the form, display the collected data as a preview to the user. The preview should include the
 user's details and a thumbnail of the uploaded photo.
+4. logout functionality
 
 <h3>4. PDF Download</h3>
 Provide users with the option to download the collected data in PDF format. The PDF should be generated
@@ -56,12 +57,18 @@ step-2 :  after opening the app you will first get the Signup Page to create a u
 
    ![image (41)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/080b79bb-5130-48f2-b7fc-af3b141d7a7a)
 
-step-4 : after successful Login you will be redirect to update user info like Name,Age,Photo,Address.
-         here only the logged in person can add information to his account because proper individual state management.
+step-4 : after successful Login you will be redirect to  user profile page where if user has already filled the information
+         like Name,Age,Image,Address then it will show the user information with logout button and Edit Profile button 
+         after clicking on Edit Profile button you will able to see one form with Name,Age,Image URL,Address after adding the 
+         information you can view Preview of that information and also you can Export to pdf .
 
  <h3>this is the screenshot of page to update information of user </h3>
 
-![image (42)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/e769ba22-6961-44f2-99c9-f275bd71e877)
+
+![image (40)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/d1e9218b-5211-4653-88fa-46c4ead7a0c0)
+
+![image (41)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/2a756531-1d94-4359-9b25-a10fac67fa7a)
+
 
  step-5: after adding the information you will see the information below the update form with the button export to pdf
          if you want to export to pdf you can click on that button. and youcan see the information inside the pdf for preview.
