@@ -1,0 +1,56 @@
+/* Signup.css */
+
+/* Container styles */
+.signup-container {
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    text-align: center; /* Center text */
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background: url('https://images.pexels.com/photos/3903949/pexels-photo-3903949.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load') center center/cover no-repeat; 
+    background-size: cover;
+  }
+  .account{
+    color: #ddd;
+  }
+  /* Heading styles */
+  .signup-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color:white;
+  }
+  
+  /* Input styles */
+  .signup-input {
+    width: 70%; /* Adjust width as needed */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: auto; /* Center the input within the container */
+  }
+  
+  /* Button styles */
+  .signup-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+   margin: auto;
+   margin-bottom: 20px;
+  }
+  
+  .signup-button:hover {
+    background-color: #45a049;
+  }
+  
