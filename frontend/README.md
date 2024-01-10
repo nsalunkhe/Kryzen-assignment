@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Kryzen-assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>Technologies used </h3>
+1. Frontend: React.js
+2. Backend: Node.js
+3. Database: MongoDB (or your preferred choice)
+4. Authentication: JSON Web Tokens (JWT)
 
-## Available Scripts
+<h3>User Authentication:</h3>
+Implement user authentication to ensure secure access to the application. Users should be able to:
+1. Register a new account with a unique username and password.
+2. Log in securely with their credentials.
+3. Access specific pages only when authenticated.
+2. Data Collection Form:
 
-In the project directory, you can run:
+<h3>Create a simple form to collect the following user information</h3>
+1. Name
+2. Age
+3. Address
+4. Photo (upload functionality)
+3. Data Display and Preview:
+After submitting the form, display the collected data as a preview to the user. The preview should include the
+user's details and a thumbnail of the uploaded photo.
 
-### `npm start`
+<h3>4. PDF Download</h3>
+Provide users with the option to download the collected data in PDF format. The PDF should be generated
+dynamically and include all the information entered in the form.
+ 
+<h3>Project Setup </h3>
+1.Clone the Repository
+2.Go to backend folder - open terminal - npm install (to install dependencies) 
+  create .env file in backend folder and add PORT=5000 MONGODB_URI= your mongodb url SECRET_KEY= your secret key 
+  then in terminal add run command node server.js. your server will run on port 5000 and connect to mongodb.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3.Go to fronted folder - open terminal run command npm install your dependencies will get installed .
+  then run another command npm run start your frontend will run on port 3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<h2>User Guide</h2>  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step-1 :  Open the app using the following link : https://kryzen-assignment.netlify.app/
+step-2 :  after opening the app you will first get the Signup Page to create a user here you need to add two credentials username and password.
+          every user must have unique name that's why if your username is unique then and then only you will be redirect to Login Page
+          otherwise you will get an error that User Already Exists !
 
-### `npm run build`
+ <h3>this is the screenshot of Signup Page</h3>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image (40)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/8c4ee5b4-5d67-4f32-b870-243f014bc6fd)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ step-3 : after successful signup you will be redirect to Login Page where you need to add the same credentials which added while Signup.
+          if your credentials are correct then and then only you will be redirect to update that users information .
+          otherwise you will get an error Invalid username or password
+          
+   <h3>this is the screenshot of Login Page</h3> 
 
-### `npm run eject`
+   ![image (41)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/080b79bb-5130-48f2-b7fc-af3b141d7a7a)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+step-4 : after successful Login you will be redirect to update user info like Name,Age,Photo,Address.
+         here only the logged in person can add information to his account because proper individual state management.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ <h3>this is the screenshot of page to update information of user </h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image (42)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/e769ba22-6961-44f2-99c9-f275bd71e877)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ step-5: after adding the information you will see the information below the update form with the button export to pdf
+         if you want to export to pdf you can click on that button. and youcan see the information inside the pdf for preview.
+         you can also download that pdf. and if you want to close the preview at the right side there is a X button to close preview.
 
-## Learn More
+   <h3> these are the screenshots of the page for pdf preview and download</h3>      
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ![image (43)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/b175b980-f545-4d97-9044-cba46f9969cd)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![image (44)](https://github.com/nsalunkhe/Kryzen-assignment/assets/101391587/fef0dcb3-5a26-4038-abb7-408cd9a69513)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1>!! Thank You !!</h1>
+   
